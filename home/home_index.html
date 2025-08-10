@@ -12,13 +12,65 @@
   </head>
   <body>
     <nav id="navbar">
-      <ul style="list-style-type: none" id="nav-links">
+      <ul id="nav-links" style="list-style-type: none">
         <li><a class="nav-text" href="home_index.html">Home</a></li>
         <li>
-          <a class="nav-text" href="../profile/profile_index.html">Profile</a>
+          <a
+            class="nav-text"
+            href="../profile/profile_index.html"
+            id="profile-link"
+            style="display: none"
+            >Profile</a
+          >
         </li>
+        <li><button id="logout-btn" style="display: none">Logout</button></li>
       </ul>
+      <button id="login-btn">Log In</button>
     </nav>
+
+    <!-- Modal for login -->
+    <div id="login-modal" class="modal" aria-hidden="true">
+      <div class="modal-content" role="dialog" aria-modal="true">
+        <span class="close-btn" data-close>&times;</span>
+        <h3>Log In</h3>
+        <form id="login-form">
+          <input type="email" id="login-email" placeholder="Email" required />
+          <input
+            type="password"
+            id="login-pass"
+            placeholder="Password"
+            required
+          />
+          <div class="btn-row">
+            <button type="submit">Log In</button>
+            <button type="button" id="switch-to-signup">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div id="signup-modal" class="modal" aria-hidden="true">
+      <div class="modal-content" role="dialog" aria-modal="true">
+        <span class="close-btn" data-close>&times;</span>
+        <h3>Create Profile</h3>
+        <form id="signup-form">
+          <input type="text" id="signup-user" placeholder="Username" required />
+          <input type="email" id="signup-email" placeholder="Email" required />
+          <input
+            type="password"
+            id="signup-pass"
+            placeholder="Password"
+            required
+          />
+          <div class="btn-row">
+            <button type="submit">Sign Up</button>
+            <button type="button" id="switch-to-login">Log In</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <main>
       <div id="feed"></div>
     </main>
