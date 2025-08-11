@@ -3,15 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BookLog</title>
+    <title>BookLog | Profile</title>
     <link rel="stylesheet" href="profile_styles.css" />
+    <link rel="stylesheet" href="../commonFiles/common.css" />
+    <link rel="stylesheet" href="/commonFiles/logIn_logOut.css" />
   </head>
   <body>
     <nav id="navbar">
-      <ul style="list-style-type: none" id="nav-links">
-        <li><a class="nav-text" href="../home/home_index.html">Home</a></li>
-        <li><a class="nav-text" href="profile_index.html">Profile</a></li>
-      </ul>
+      <div class="nav-left">
+        <a href="/home/home_index.html">
+          <img id="logo" src="/Images/logo_placeholder.png" alt="Logo" />
+        </a>
+      </div>
+
+      <div class="nav-right">
+        <a
+          href="../profile/profile_index.html"
+          id="profile-link"
+          style="display: none"
+        >
+          <img src="/Icons/user.png" alt="profile icon" id="profile-icon" />
+        </a>
+        <button id="logout-btn" style="display: none">Logout</button>
+      </div>
     </nav>
     <script src="profile_scripts.js"></script>
   </body>

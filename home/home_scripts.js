@@ -141,10 +141,5 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   updateUIForLoggedOutUser();
 });
-document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("logout-btn").addEventListener("click", () => {
-    localStorage.removeItem("loggedInUser");
-    updateUIForLoggedOutUser();
-    alert("You have logged out.");
-  });
-});
+
+document.getElementById("logout-btn").style.display = "none";

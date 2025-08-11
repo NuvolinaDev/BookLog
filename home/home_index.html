@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BookLog</title>
+    <title>BookLog | Home</title>
     <link rel="stylesheet" href="home_styles.css" />
+    <link rel="stylesheet" href="../commonFiles/common.css" />
+    <link rel="stylesheet" href="/commonFiles/logIn_logOut.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
@@ -12,20 +14,22 @@
   </head>
   <body>
     <nav id="navbar">
-      <ul id="nav-links" style="list-style-type: none">
-        <li><a class="nav-text" href="home_index.html">Home</a></li>
-        <li>
-          <a
-            class="nav-text"
-            href="../profile/profile_index.html"
-            id="profile-link"
-            style="display: none"
-            >Profile</a
-          >
-        </li>
-        <li><button id="logout-btn" style="display: none">Logout</button></li>
-      </ul>
-      <button id="login-btn">Log In</button>
+      <div class="nav-left">
+        <a href="/home/home_index.html">
+          <img id="logo" src="/Images/logo_placeholder.png" alt="Logo" />
+        </a>
+      </div>
+
+      <div class="nav-right">
+        <a
+          href="../profile/profile_index.html"
+          id="profile-link"
+          style="display: none"
+        >
+          <img src="/Icons/user.png" alt="profile icon" id="profile-icon" />
+        </a>
+        <button id="login-btn">Log In</button>
+      </div>
     </nav>
 
     <!-- Modal for login -->
