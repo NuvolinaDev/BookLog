@@ -25,6 +25,9 @@
   border-radius: 6px;
   cursor: pointer;
 }
+#logout-btn:hover {
+  background-color: #e55a5a;
+}
 
 /* MODAL STYLES */
 .modal {
