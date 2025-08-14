@@ -47,13 +47,11 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("login-form").addEventListener("submit", (e) => {
     e.preventDefault();
     loginModal.classList.remove("show");
-    alert("Simulated Log In");
   });
 
   document.getElementById("signup-form").addEventListener("submit", (e) => {
     e.preventDefault();
     signupModal.classList.remove("show");
-    alert("Simulated Sign Up");
   });
 });
 
