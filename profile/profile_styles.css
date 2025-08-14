@@ -3,6 +3,7 @@
   margin: 20px auto;
   padding: 20px;
   max-width: 800px;
+  height: max-content;
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* align everything to the left */
@@ -34,8 +35,10 @@
   margin: 10px 0;
   border-radius: 1px;
 }
-
-#addBooksBtn {
+.bookshelfBtns:hover {
+  background-color: #5a53d6;
+}
+.bookshelfBtns {
   background-color: #6c63ff;
   color: white;
   padding: 10px 20px;
@@ -43,7 +46,5 @@
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
-}
-#addBooksBtn:hover {
-  background-color: #5a53d6;
+  margin-right: 10px; /* Add some space between buttons */
 }
