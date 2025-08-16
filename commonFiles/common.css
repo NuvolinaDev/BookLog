@@ -6,6 +6,9 @@ body {
   margin: 0;
   font-family: "Nunito", sans-serif;
 }
+html {
+  margin: 0;
+}
 #navbar {
   display: flex;
   justify-content: space-between;

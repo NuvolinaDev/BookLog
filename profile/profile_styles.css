@@ -1,5 +1,5 @@
 #bookshelf {
-  background-color: rgba(0, 0, 0, 0.474);
+  background-color: rgba(0, 0, 0, 0.6);
   margin: 20px auto;
   padding: 20px;
   max-width: 800px;
@@ -9,7 +9,6 @@
   align-items: flex-start; /* align everything to the left */
   border-radius: 20px;
 }
-
 #bookshelfTitle {
   color: white;
   font-size: 35px;
@@ -27,7 +26,6 @@
   align-items: center;
   margin: 10px;
 }
-
 .line {
   width: 100%;
   height: 2px;
