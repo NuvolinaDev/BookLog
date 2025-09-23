@@ -1,10 +1,13 @@
+:root {
+  font-family: "Nunito", sans-serif;
+}
+
 body {
   background-image: url("../Images/background.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   margin: 0;
-  font-family: "Nunito", sans-serif;
 }
 html {
   margin: 0;
@@ -13,7 +16,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(0, 41, 84);
+  background-color: rgb(0, 40, 85);
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -48,4 +51,11 @@ footer {
 .nav-right {
   height: 35px;
   width: auto;
+}
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  margin: 10px 0;
+  border-radius: 1px;
 }
