@@ -14,19 +14,19 @@
   <body>
     <nav id="navbar">
       <div class="nav-left">
-        <a href="/home/home_index.html">
+        <a href="/home/home_de_index.html">
           <img id="logo" src="/Images/logo_placeholder.png" alt="Logo" />
         </a>
       </div>
       <div class="nav-right">
         <a
-          href="../profile/profile_index.html"
+          href="../profile/profile_de_index.html"
           id="profile-link"
           style="display: none"
         >
           <img src="/Icons/user.png" alt="profile icon" id="profile-icon" />
         </a>
-        <button id="login-btn">Log In</button>
+        <button id="login-btn">Einloggen</button>
       </div>
     </nav>
 
@@ -34,7 +34,7 @@
     <div id="login-modal" class="modal" aria-hidden="true">
       <div class="modal-content" role="dialog" aria-modal="true">
         <span class="close-btn" data-close>&times;</span>
-        <h3>Log In</h3>
+        <h3>Einloggen</h3>
         <form id="login-form">
           <input type="email" id="login-email" placeholder="Email" required />
           <input
@@ -44,8 +44,8 @@
             required
           />
           <div class="btn-row">
-            <button type="submit">Log In</button>
-            <button type="button" id="switch-to-signup">Sign Up</button>
+            <button type="submit">Anmelden</button>
+            <button type="button" id="switch-to-signup">Registrieren</button>
           </div>
         </form>
       </div>
@@ -55,19 +55,24 @@
     <div id="signup-modal" class="modal" aria-hidden="true">
       <div class="modal-content" role="dialog" aria-modal="true">
         <span class="close-btn" data-close>&times;</span>
-        <h3>Create Profile</h3>
+        <h3>Profil erstellen</h3>
         <form id="signup-form">
-          <input type="text" id="signup-user" placeholder="Username" required />
+          <input
+            type="text"
+            id="signup-user"
+            placeholder="Benutzername"
+            required
+          />
           <input type="email" id="signup-email" placeholder="Email" required />
           <input
             type="password"
             id="signup-pass"
-            placeholder="Password"
+            placeholder="Passwort"
             required
           />
           <div class="btn-row">
-            <button type="submit">Sign Up</button>
-            <button type="button" id="switch-to-login">Log In</button>
+            <button type="submit">Registrieren</button>
+            <button type="button" id="switch-to-login">Anmelden</button>
           </div>
         </form>
       </div>
@@ -75,7 +80,7 @@
     <main>
       <div id="feed">
         <section id="feedSection">
-          <h1 id="feedTitle">News Feed</h1>
+          <h1 id="feedTitle">Neuigkeiten</h1>
         </section>
         <div class="line"></div>
       </div>
@@ -84,12 +89,13 @@
     <footer>
       <p>&copy; 2025 BookLog. All rights reserved.</p>
       <p>
-        Contact us at <a href="mailto:example@mail.com">example@mail.com</a>
+        Kontaktieren Sie uns unter
+        <a href="mailto:example@mail.com">example@mail.com</a>
       </p>
     </footer>
-    <a href="/home/home_de_index.html">
-      <button id="germanBtn">German</button></a
-    >
+    <a href="/home/home_index.html">
+      <button id="EnglishBtn">English</button>
+    </a>
     <script src="home_scripts.js"></script>
   </body>
 </html>

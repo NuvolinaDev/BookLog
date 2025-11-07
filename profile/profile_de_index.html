@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookLog | Profil</title>
+    <link rel="stylesheet" href="profile_styles.css" />
+    <link rel="stylesheet" href="../commonFiles/common.css" />
+    <link rel="stylesheet" href="/commonFiles/logIn_logOut.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="nav-left">
+        <a href="/home/home_de_index.html">
+          <img id="logo" src="/Images/logo_placeholder.png" alt="Logo" />
+        </a>
+      </div>
+
+      <div class="nav-right">
+        <a
+          href="../profile/profile_de_index.html"
+          id="profile-link"
+          style="display: none"
+        >
+          <img src="/Icons/user.png" alt="profile icon" id="profile-icon" />
+        </a>
+        <button id="logout-btn" style="display: none">Ausloggen</button>
+      </div>
+    </nav>
+    <main>
+      <div id="bookshelf">
+        <div class="bookshelf-header">
+          <h1 id="bookshelfTitle">Bibliothek</h1>
+          <img id="bookshelfIcon" src="/Icons/bookshelf.png" alt="bookshelf" />
+        </div>
+        <div class="line"></div>
+        <div>
+          <button class="bookshelfBtns" id="addBooksBtn">
+            Bücher hinzufügen
+          </button>
+          <button class="bookshelfBtns" id="editBookBtn">
+            Buch bearbeiten
+          </button>
+          <button class="bookshelfBtns" id="wishlistBtn">Wunschliste</button>
+        </div>
+      </div>
+    </main>
+    <script src="profile_scripts.js"></script>
+  </body>
+</html>
